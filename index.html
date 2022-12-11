@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Drowsiness Detector</title>
+	<meta charset="UTF-8">
+	<link href="static/style.css" rel="stylesheet">
+</head>
+<body>
+
+<video autoplay muted loop id="myVideo">
+  <source src="static/night_drive.mp4" type="video/mp4">
+</video>
+
+<div class="content">
+	<div style="margin-left: 40px;">
+  <h1
+	style="font-family:georgia;
+				font-size:40px;
+				margin-bottom: 0px;">DROWSINESS DETECTOR APP</h1>
+  <p style="font-family:helvetica;
+					font-size:20px;
+					margin-top: 2px;
+					margin-bottom: 30px;">Upload a photo to detect if you are feeling droswy.</p>
+	<form method="POST" action="submit" enctype="multipart/form-data">
+			<input type="file" name='image' style="border: solid #800000 2px;
+			font-family: Verdana;
+			font-size: 20px;
+			font-weight: 100;
+			margin-left: 30px;
+			width: 400px;
+			display: inline-block;"><br><br><br>
+			<button id="myBtn" type="submit">Submit</button>
+	</form>
+</div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Image Prediction</title>
+	<meta charset="UTF-8">
+	<link href="static/style.css" rel="stylesheet">
+</head>
+<img src="/static/road.jpg">
+<body style="background-color: #e8e7e3">
+	<div style="margin-left: 40px;">
+	<h1 style="margin-bottom: 0px;">DROWSINESS DETECTOR APPLICATION</h1>
+	<hr style="width:500px; margin-left: -12px;
+			height:1px; border-width:1; color:gray; background-color:gray;">
+	{% if data %}
+				<h2 style="margin-left:130px;
+				font-family:verdana; font-size: 24px;">Eyes are {{ data[0] }}</h2>
+				<img src="/static/uploadedthis.jpg" width=400 style="border: solid 2px;
+				    border-image: linear-gradient(0deg, rgb(17,12,61), rgb(50,80,92)) 1;
+						margin-left:20px;">
+	{% endif %}
+	<br><br>
+  <a href="/"><button id="myBtn" style="margin-left:120px">Back</button></a>
+</div>
+</body>
+</html>
